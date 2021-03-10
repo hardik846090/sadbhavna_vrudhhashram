@@ -1,0 +1,6 @@
+bank name
+IFSC
+bank account number
+branch address
+holder name
+phone number

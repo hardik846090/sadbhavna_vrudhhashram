@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpoceans">
+    <title>Nasarna - Charity Nonprofit HTML 5 Template</title>
+    <link href="{% static '/css/themify-icons.css' %}" rel="stylesheet">
+    <link href="{% static '/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static '/css/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static '/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static '/css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static '/css/owl.theme.css' %}" rel="stylesheet">
+    <link href="{% static '/css/slick.css' %}" rel="stylesheet">
+    <link href="{% static '/css/slick-theme.css' %}" rel="stylesheet">
+    <link href="{% static '/css/swiper.min.css' %}" rel="stylesheet">
+    <link href="{% static '/css/owl.transitions.css' %}" rel="stylesheet">
+    <link href="{% static '/css/jquery.fancybox.css' %}" rel="stylesheet">
+    <link href="{% static '/css/odometer-theme-default.css' %}" rel="stylesheet">
+    <link href="{% static '/css/nice-select.css' %}" rel="stylesheet">
+    <link href="{% static '/css/style.css' %}" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700,700i%7COpen+Sans:400,400i,700,700i"
+          rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<!-- start page-wrapper -->
+<div class="page-wrapper">
+    <!-- start preloader -->
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!-- end preloader -->
+    <!-- Start header -->
+    <header id="header" class="wpo-site-header wpo-header-style-2">
+        <div class="topbar" style="background-color: #f09307d1;">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-6 col-sm-7 col-12">
+                        <div class="contact-intro">
+                            <ul>
+                                <li><img src="{% static '/img/png/phone-call.png' %}" width="20" height="20"
+                                         style="margin-right: 10px;">+000123456789
+                                </li>
+                                <li><img src="{% static '/img/png/email.png' %}" width="20" height="20"
+                                         style="margin-right: 10px;"> nasarna@gmail.com
+                                </li>
+                                <div class="container clearfix" id="google_translate_element"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-md-6 col-sm-5 col-12">
+                        <div class="contact-info">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li><a class="theme-btn" href="/donate">Donate Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end topbar -->
+        <nav class="navigation navbar navbar-default" style="background-color: #f0be07">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="open-btn">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="{% static '/img/png/logo.png' %}"
+                                                          alt="logo"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
+                    <button class="close-navbar"><i class="ti-close"></i></button>
+                    <ul class="nav navbar-nav">
+                        <li class="menu-item-has-children">
+                            <a href="/" style="color: black;">Home Page</a>
+                            {#     <ul class="sub-menu">#}
+                            {#         <li><a href="/">Home style 1</a></li>#}
+                            {#         <li><a href="index-2.html">Home style 2</a></li>#}
+                            {#         <li><a href="index-3.html">Home style 3</a></li>#}
+                            {#     </ul>#}
+                        </li>
+                        <li><a href="/about" style="color: black;">About</a></li>
+                        <li><a href="/cause" style="color: black;">Causes</a></li>
+                        <li><a href="/event" style="color: black;">Event</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#" style="color: black;">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="/about" style="color: black;">About</a></li>
+                                <li><a href="/donate" style="color: black;">Donate</a></li>
+                                <li><a href="/volunteer" style="color: black;">Volunteer</a></li>
+                                <li><a href="/error" style="color: black;">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/blog" style="color: black";>Blog</a>
+                            {#                            <ul class="sub-menu">#}
+                            {#                                <li><a href="blog.html">Blog right sidebar</a></li>#}
+                            {#                                <li><a href="blog-left.html">Blog left sidebar</a></li>#}
+                            {#                                <li><a href="blog-fulwidth.html">Blog fullwidth</a></li>#}
+                            {#                                <li class="menu-item-has-children">#}
+                            {#                                    <a href="#">Blog details</a>#}
+                            {#                                    <ul class="sub-menu">#}
+                            {#                                        <li><a href="blog-single.html">Blog details right sidebar</a></li>#}
+                            {#                                        <li><a href="blog-single-left.html">Blog details left sidebar</a></li>#}
+                            {#                                        <li><a href="blog-single-fluid.html">Blog details fullwidth</a></li>#}
+                            {#                                    </ul>#}
+                            {#                                </li>#}
+                            {#                            </ul>#}
+                        </li>
+                        <li><a href="/contact" style="color: black;">Contact</a></li>
+                    </ul>
+                </div><!-- end of nav-collapse -->
+                {#                <div class="cart-search-contact">#}
+                {#                    <div class="mini-cart">#}
+                {#                        <button class="cart-toggle-btn"><i class="fi flaticon-shopping-bag"></i> <span#}
+                {#                                class="cart-count">02</span></button>#}
+                {#                        <div class="mini-cart-content">#}
+                {#                            <div class="mini-cart-title">#}
+                {#                                <p>Shopping Cart</p>#}
+                {#                            </div>#}
+                {#                            <div class="mini-cart-items">#}
+                {#                                <div class="mini-cart-item clearfix">#}
+                {#                                    <div class="mini-cart-item-image">#}
+                {#                                        <a href="#"><img src="assets/images/shop/mini/img-1.jpg"#}
+                {#                                                         alt="Hoodie with zipper"></a>#}
+                {#                                    </div>#}
+                {#                                    <div class="mini-cart-item-des">#}
+                {#                                        <a href="#">Hoodie with zipper</a>#}
+                {#                                        <span class="mini-cart-item-price">$25.15</span>#}
+                {#                                        <span class="mini-cart-item-quantity">x 1</span>#}
+                {#                                    </div>#}
+                {#                                </div>#}
+                {#                                <div class="mini-cart-item clearfix">#}
+                {#                                    <div class="mini-cart-item-image">#}
+                {#                                        <a href="#"><img src="assets/images/shop/mini/img-2.jpg"#}
+                {#                                                         alt="Hoodie with zipper"></a>#}
+                {#                                    </div>#}
+                {#                                    <div class="mini-cart-item-des">#}
+                {#                                        <a href="#">Hoodie with zipper</a>#}
+                {#                                        <span class="mini-cart-item-price">$12.99</span>#}
+                {#                                        <span class="mini-cart-item-quantity">x 2</span>#}
+                {#                                    </div>#}
+                {#                                </div>#}
+                {#                            </div>#}
+                {#                            <div class="mini-cart-action clearfix">#}
+                {#                                <span class="mini-checkout-price">$255.12</span>#}
+                {#                                <a href="" class="theme-btn-s4">View Cart</a>#}
+                {#                            </div>#}
+                {#                        </div>#}
+                {#                    </div>#}
+                {#                    <div class="header-search-form-wrapper">#}
+                {#                        <button class="search-toggle-btn"><i class="fi flaticon-magnifying-glass"></i></button>#}
+                {#                        <div class="header-search-form">#}
+                {#                            <form>#}
+                {#                                <div>#}
+                {#                                    <input type="text" class="form-control" placeholder="Search here...">#}
+                {#                                    <button type="submit"><i class="fi flaticon-magnifying-glass"></i></button>#}
+                {#                                </div>#}
+                {#                            </form>#}
+                {#                        </div>#}
+                {#                    </div>#}
+                {#                </div>#}
+            </div><!-- end of container -->
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- start of hero -->
+    <section class="hero hero-style-1">
+        <div class="hero-slider">
+            {% for i in bennerList %}
+                <div class="slide">
+                    <div class="container">
+                        <img src="/media/{{ i.image }}" alt class="slider-bg">
+                        <div class="row">
+                            <div class="col col-md-6 slide-caption">
+                                <div class="slide-title">
+                                    <h2>Let’s be Kind for <span>Children</span></h2>
+                                </div>
+                                <div class="slide-subtitle">
+                                    <p>High Quality Charity Theme in Envato Market.</p>
+                                    <p>You Can Satisfied Yourself By Helping.</p>
+                                </div>
+                                <div class="btns">
+                                    <a href="/donate" class="theme-btn">Donate Now</a>
+                                    <a href="/about" class="theme-btn-s2">Know More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- end of hero slider -->
+    <!-- wpo-mission-area start -->
+    <div class="wpo-mission-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wpo-section-title">
+                        <span>What We Do?</span>
+                        <h2>We Are In A Mission To Help The Helpless</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-mission-wrap">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12 custom-grid">
+                        <div class="wpo-mission-item">
+                            <div class="wpo-mission-icon">
+                                <img src="{% static '/img/png/water.png' %}" height="100">
+                            </div>
+                            <div class="wpo-mission-content">
+                                <h2>Clean Water</h2>
+                                <p>Access to safe water at vrudhhashram means health, hope and opportunity for Sarah and
+                                    her
+                                    family.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 custom-grid">
+                        <div class="wpo-mission-item">
+                            <div class="wpo-mission-icon-2">
+                                <img src="{% static '/img/png/groceries.png' %}" height="100">
+                            </div>
+                            <div class="wpo-mission-content">
+                                <h2>Healthy Food</h2>
+                                <p>We provide nutritious meals at low costs and work with hundreds of verified NGOs to
+                                    feed the needy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 custom-grid">
+                        <div class="wpo-mission-item">
+                            <div class="wpo-mission-icon-3">
+                                <img src="{% static '/img/png/study.png' %}" height="100">
+                            </div>
+                            <div class="wpo-mission-content">
+                                <h2>Pure Education</h2>
+                                <p>India has four NGOs for every 1,000 people in the urban areas, and 2.3 NGOs for every
+                                    1,000 people in rural areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 custom-grid">
+                        <div class="wpo-mission-item">
+                            <div class="wpo-mission-icon-4">
+                                <img src="{% static '/img/png/healthcare.png' %}" height="100">
+                            </div>
+                            <div class="wpo-mission-content">
+                                <h2>Medical Facilities</h2>
+                                <p>Non-Governmental Organizations or NGOs refer to non-profit organizations which are
+                                    not under any kind of government influence. They can work to promote social or
+                                    political change on a broad scale or very locally.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wpo-mission-area end -->
+    <!-- wpo-about-area start -->
+    <div class="wpo-about-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 colsm-12">
+                    <div class="wpo-about-text">
+                        <div class="wpo-section-title">
+                            <span>What We Do?</span>
+                            <h2>We Are In A Mission To Help The Helpless</h2>
+                        </div>
+                        <p>Sadbhavna Vruddhashram is a leading charity in India working with and for disadvantaged
+                            elderly for nearly for 6 years. There are an estimated 106 million elderly in India.
+                            Sadbhavna Vruddhashram advocates for their needs such as shelter, food and warmth. It
+                            advocates for elder friendly policies and their implementation thereof. It works
+                            hand-in-hand with Senior Citizens Associations understanding elder needs working with and
+                            for them.
+                            The aim is to serve elder needs in a holistic manner, enabling them to live active,
+                            dignified and healthier lives. Sadbhavna Vruddhashram ’s focus over the years has moved from
+                            Welfare to Development. Providing free food and health services to elders we aim to let them
+                            feel secured, cared and loved.
+                            All donations to Sadbhavna Vruddhashram India are eligible for 50% tax exemption under
+                            section 80G of the Income Tax Act, 1961.</p>
+                        <p>Manavseva trust began in early 2014 with one tree plantation and rest is truly history. The
+                            passion to reduce pollution and support farmers through planting trees continued to drive
+                            Manavseva trust towards mega projects in rural areas and mass tree plantations. </p>
+                        <p>With the realization that innovation is needed in the plantation field to respond to the need
+                            for nature in our urbanizing cities, Manavseva trust started with few trees and today
+                            continues to plant lakhs of trees every year. Our work aims to connect people with nature in
+                            urban spaces through tree plantations and rejuvenating the ecosystem.
+                            Our focus is to fight the climate crisis and therefore we are working to provide sustainable
+                            solutions for a greener world through our projects Ecosystem Rejuvenation (Air, Water, Soil)
+                            and Sustainable Solutions. We continue to involve communities, raise awareness, and
+                            encourage implementation on the ground, ultimately working together to create a healthy and
+                            pollution-free Gujarat. We have planted more than 7 lacks trees over the years. Purchased 70
+                            tractor and tankers to watering the pants and trees. 280 employees are working constantly to
+                            make this all happen.
+                            We opt for traditional trees such as Pipar, Ambali, Pipal, Neem etc which purifies air and
+                            gives endless health benefits as well.</p>
+                        {#                        <p>SHEOWS Old Age Home aims to address the issue of elder abuse and works towards it by#}
+                        {#                            providing a home to the gray-haired souls who have been abandoned and have lost the hope to#}
+                        {#                            live. Our mission is “To serve the destitute/abandoned/abused old aged by attending to their#}
+                        {#                            needs, wounds and agony at the dusk of their life. We also aim and that no elderly should#}
+                        {#                            die on the roadside.”</p>#}
+                        {#                        <p>Since at present problems related to old age like paralysis, disability, abandonment etc are#}
+                        {#                            on an all-time high we constantly require funds to sustain and maintain the quality of#}
+                        {#                            services provided to the residents for which we need support from the people who understand#}
+                        {#                            and resonate with our cause. We are proud to say that we provide the best healthcare service#}
+                        {#                            to these elderlies and would need your support to continue doing the same.</p>#}
+                        <div class="btns">
+                            <a href="/about" class="theme-btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 colsm-12">
+                    <div class="wpo-about-img">
+                        <img src="{% static '/img/png/about.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wpo-about-area end -->
+    <!-- wpo-case-area start -->
+    <div class="wpo-case-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wpo-section-title">
+                        <span>Our Causes</span>
+                        <h2>Popular Causes What You Should Know</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="wpo-case-wrap">
+                <div class="wpo-case-slider">
+                    {% for i in causeList %}
+                        <div class="wpo-case-single">
+                            <div class="wpo-case-item">
+                                <div class="wpo-case-img">
+                                    <img src="/media/{{ i.image }}" alt="" height="300">
+                                </div>
+                                <div class="wpo-case-content">
+                                    <div class="wpo-case-text-top">
+                                        <h2>{{ i.title }}</h2>
+                                        <div class="progress-section">
+                                            <div class="process">
+                                                <div class="progress">
+                                                    <div class="progress-bar">
+                                                        <div class="progress-value"><span>65.5</span>%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="case-btn">
+                                        <ul>
+                                            <li><a href="/cause">Learn More</a></li>
+                                            <li><a href="/donate">Donate Now</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wpo-case-area end -->
+    <!-- .wpo-counter-area start -->
+    <div class="wpo-counter-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wpo-counter-grids">
+                        <div class="grid">
+                            <div>
+                                <h2><span class="odometer" data-count="6200">00</span>+</h2>
+                            </div>
+                            <p>Donation</p>
+                        </div>
+                        <div class="grid">
+                            <div>
+                                <h2><span class="odometer" data-count="80">00</span>+</h2>
+                            </div>
+                            <p>Fund Raised</p>
+                        </div>
+                        <div class="grid">
+                            <div>
+                                <h2><span class="odometer" data-count="245">00</span>+</h2>
+                            </div>
+                            <p>Volunteers</p>
+                        </div>
+                        <div class="grid">
+                            <div>
+                                <h2><span class="odometer" data-count="605">00</span>+</h2>
+                            </div>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .wpo-counter-area end -->
+    <!-- wpo-team-area start -->
+    <div class="wpo-team-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wpo-section-title">
+                        <span>Meet Our Team</span>
+                        <h2>Our Expert Volunteer</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for i in volunteerList %}
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 custom-grid">
+                        <div class="wpo-team-wrap">
+                            <div class="wpo-team-img">
+                                <img src="/media/{{ i.image }}" alt="">
+                            </div>
+                            <div class="wpo-team-content">
+                                <div class="wpo-team-text-sub">
+                                    <h2>{{ i.name }}</h2>
+                                    <span>{{ i.role }}</span>
+                                    <ul>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter"></i></a></li>
+                                        <li><a href="#"><i class="ti-google"></i></a></li>
+                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- wpo-team-area end -->
+    <!-- world area start -->
+    <div class="wpo-world-area">
+        <div class="container" style="background-image: url({% static 'img/png/world.png' %})">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wpo-world-section">
+                        <h2>Lets Chenge The World With Humanity</h2>
+                        <a href="/volunteer"><img src="{% static 'img/png/team/1.png' %}'" alt="">Become A Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- world area end -->
+    <!-- wpo-event-area start -->
+    <div class="wpo-event-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wpo-section-title">
+                        <span>Our Events</span>
+                        <h2>Upcoming Events</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for i in upcomingEventList %}
+                    <div class="col-md-4 col-sm-6 col-12 custom-grid">
+                        <div class="wpo-event-item">
+                            <div class="wpo-event-img">
+                                <img src="/media/{{ i.image }}" alt="" height="300">
+                                <div class="thumb-text">
+                                    <span>{{ i.date }}</span>
+                                    {#                                    <span>NOV</span>#}
+                                </div>
+                            </div>
+                            <div class="wpo-event-text">
+                                <h2>{{ i.title }}</h2>
+                                {#                                <ul>#}
+                                {#                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>8.00 - 5.00</li>#}
+                                {#                                    <li><i class="fi flaticon-pin"></i>Newyork City</li>#}
+                                {#                                </ul>#}
+                                <p>{{ i.description|slice:":50" }}</p>
+                                <a href="/blog_fulwidth/{{ i.id }}">Learn More...</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- wpo-event-area end -->
+    <!-- wpo-cta-area start -->
+    <div class="wpo-cta-area" style="background-image: url({% static 'img/jpg/cta.jpg' %})">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wpo-cta-text">
+                        <h2>You Can Help The Poor With Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse </p>
+                        <div class="btns">
+                            <a href="/donate" class="theme-btn">Donate Now</a>
+                            <a href="/volunteer" class="theme-btn-s2">Join Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wpo-cta-area end -->
+    <!-- wpo-blog-area start -->
+    <div class="wpo-blog-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wpo-section-title">
+                        <span>Our Blog</span>
+                        <h2>Latest News</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for i in latestNewsList %}
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 custom-grid">
+                        <div class="wpo-blog-item">
+                            <div class="wpo-blog-img">
+                                <img src="/media/{{ i.image }}" alt="" height="300">
+                            </div>
+                            <div class="wpo-blog-content">
+                                <span>{{ i.date|date }}</span>
+                                <h2>{{ i.title }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- wpo-blog-area end -->
+    <div class="wpo-ne-footer">
+        <!-- start wpo-news-letter-section -->
+        <section class="wpo-news-letter-section" style="background-color: #f0be07">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="wpo-newsletter">
+                            <h3 style="color: black;">Follow us For ferther information</h3>
+                            <div class="wpo-newsletter-form">
+                                <form>
+                                    <div>
+                                        <input type="text" placeholder="Enter Your Email" class="form-control">
+                                        <button type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end wpo-news-letter-section -->
+        <!-- start wpo-site-footer -->
+        <footer class="wpo-site-footer" style="background-color: #f0be07">
+            <div class="wpo-upper-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-3 col-sm-6">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="{% static '/img/png/logo.png' %}" alt="blog">
+                                </div>
+                                <p style="color: black">Build and Earn with your online store with lots of cool and
+                                    exclusive
+                                    wpo-features </p>
+                                <ul>
+                                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                    <li><a href="#"><i class="ti-google"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-md-3 col-sm-6">
+                            <div class="widget link-widget resource-widget">
+                                <div class="widget-title">
+                                    <h3 style="color: black;">Top News</h3>
+                                </div>
+                                <div class="news-wrap">
+                                    <div class="news-img">
+                                        <img src="{% static '/img/jpg/footer/img-1.jpg' %}" alt="">
+                                    </div>
+                                    <div class="news-text">
+                                        <h3 style="color: black;">Education for all poor children</h3>
+                                        <span style="color: black;">12 Nov, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="news-wrap">
+                                    <div class="news-img">
+                                        <img src="{% static '/img/jpg/footer/img-2.jpg' %}" alt="">
+                                    </div>
+                                    <div class="news-text">
+                                        <h3 style="color: black;">Education for all poor children</h3>
+                                        <span style="color: black;">12 Nov, 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-2 col-md-3 col-sm-6">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3 style="color: black;">Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="/about" style="color: black;">About Us</a></li>
+                                    <li><a href="/cause" style="color: black;">Our Causes</a></li>
+                                    <li><a href="/" style="color: black;">Our Mission</a></li>
+                                    <li><a href="/contact" style="color: black;">Contact Us</a></li>
+                                    <li><a href="/event" style="color: black;">Our Event</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3 col-lg-offset-1 col-md-3 col-sm-6">
+                            <div class="widget market-widget wpo-service-link-widget">
+                                <div class="widget-title">
+                                    <h3 style="color: black;">Contact </h3>
+                                </div>
+                                <p style="color: black;">online store with lots of cool and exclusive wpo-features</p>
+                                <div class="contact-ft">
+                                    <ul>
+                                        <li style="color: black;"><img src="{% static '/img/png/placeholder.png' %}"
+                                                                       width="20" height="20"
+                                                                       style="margin-right: 10px;">28 Street, New York
+                                            City, USA
+                                        </li>
+                                        <li style="color: black;"><img src="{% static '/img/png/phone-call.png' %}"
+                                                                       width="20" height="20"
+                                                                       style="margin-right: 10px;">+000123456789
+                                        </li>
+                                        <li style="color: black;"><img src="{% static '/img/png/email.png' %}"
+                                                                       width="20" height="20"
+                                                                       style="margin-right: 10px;">Hastium@gmail.com
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer" style="background-color: black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright">&copy; 2020 Nasarna. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end wpo-site-footer -->
+    </div>
+</div>
+<!-- end of page-wrapper -->
+<!-- All JavaScript files
+================================================== -->
+<script src="{% static '/js/jquery.min.js' %}"></script>
+<script src="{% static '/js/bootstrap.min.js' %}"></script>
+<!-- Plugins for this template -->
+<script src="{% static '/js/jquery-plugin-collection.js' %}"></script>
+<!-- Custom script for this template -->
+<script src="{% static '/js/script.js' %}"></script>
+</body>
+
+</html>
